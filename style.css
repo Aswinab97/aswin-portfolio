@@ -197,6 +197,23 @@ body {
   font-size: 14px;
   font-style: italic;
 }
+/* PROJECT BADGES — NEW */
+.badge-box {
+  margin: 10px 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.badge {
+  background: #f2f2f2;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+  color: #333;
+  border: 1px solid #e2e2e2;
+}
+
 
 .tagline {
   font-size: 12px;
@@ -290,6 +307,7 @@ body {
     text-align: center;
   }
 }
+
 
 
 
