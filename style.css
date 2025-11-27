@@ -153,7 +153,7 @@ body {
 
 .two-col {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  grid-template-columns: 300px 1fr;
   gap: 48px;
   align-items: flex-start;
 }
@@ -166,10 +166,12 @@ body {
 
 .profile-photo {
   width: 100%;
-  max-width: 260px;
-  border-radius: 24px;
+  max-width: 320px;
+  height: auto;
+  border-radius: 16px;
   object-fit: cover;
   border: 1px solid #e5e5e5;
+  disply: block;
 }
 
 
@@ -337,7 +339,8 @@ body {
 
   .photo-placeholder {
     max-width: 200px;
-    height: 200px;
+    margin: 0 auto;
   }
 }
+
 
