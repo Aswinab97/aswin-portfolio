@@ -170,6 +170,33 @@ body {
   margin-bottom: 6px;
   font-size: 18px;
 }
+.card-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+.card-link.secondary {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  color: #444;
+}
+
+.coming-soon {
+  display: inline-block;
+  margin-top: 10px;
+  color: #777;
+  font-size: 14px;
+  font-style: italic;
+}
 
 .tagline {
   font-size: 12px;
@@ -245,3 +272,4 @@ body {
     margin: 0 auto;
   }
 }
+
