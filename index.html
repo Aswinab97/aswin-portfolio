@@ -2,275 +2,441 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aswin Anil Bindu | Data Analyst</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aswin Anil Bindu | Data Analyst – Healthcare & AI</title>
 
-  <!-- Google Font -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Main CSS -->
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- AOS (subtle scroll animations) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+
   <!-- NAVBAR -->
   <header class="navbar">
     <div class="container nav-inner">
-      <div class="logo">ASWIN</div>
+      <div class="logo">Aswin<span>.</span></div>
+
       <nav class="nav">
+        <a href="#about">About</a>
         <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
+
+      <div class="nav-links">
+        <a href="https://github.com/Aswinab97" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/aswinab/" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <p class="hero-tag">DATA ANALYST</p>
-    <h1 class="hero-title">Aswin Anil Bindu</h1>
-    <p class="hero-sub">
-      I analyze healthcare and public-sector data to build AI-driven solutions
-      that improve accessibility, operational efficiency, and patient outcomes.
-    </p>
+  <main>
 
-    <div class="hero-buttons">
-      <a href="#projects" class="btn primary">View Projects</a>
-      <a href="#contact" class="btn outline">Contact Me</a>
-      <a href="Aswin_Resume.pdf" class="btn outline" target="_blank">
-        Download Resume
-      </a>
-    </div>
-  </section>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-text" data-aos="fade-right">
+          <p class="hero-kicker">Data Analyst – Healthcare & AI</p>
+          <h1>Hi, I’m <span>Aswin Anil Bindu</span>.</h1>
+          <p class="hero-summary">
+            I’m a data analyst focused on healthcare and public-sector analytics. I use Python, SQL,
+            and BI tools to turn real-world health data into clear, actionable insights that support
+            accessibility and better decision-making.
+          </p>
 
-  <!-- ABOUT -->
-  <section class="about">
-    <div class="container about-grid">
-      <div class="about-photo">
-        <img src="aswin.jpg" alt="Aswin profile photo" class="profile-photo" />
-      </div>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary">
+              <i class="fa-solid fa-diagram-project"></i> View Projects
+            </a>
+            <a href="Aswin_Resume.pdf" class="btn outline" download>
+              <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+          </div>
 
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>
-          Hi, I’m Aswin — a data analyst specializing in healthcare analytics,
-          predictive modelling, and dashboard development. I turn hospital and
-          public-sector data into clean, actionable insights that support
-          decision-making.
-        </p>
-        <p>
-          My background is in Mechanical Engineering and Python Data Science,
-          and I’m currently studying Applied AI Solutions Development at George
-          Brown College. My work integrates Python, SQL, and modern BI tools to
-          support evidence-based healthcare planning.
-        </p>
-        <p>
-          My mission is to use AI to improve accessibility and build solutions
-          that support people with disabilities — a passion shaped by my lived
-          experience.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS (FULL WIDTH) -->
-  <section id="projects" class="projects">
-    <div class="container">
-      <h2>Projects</h2>
-
-      <!-- Project 1 -->
-      <div class="card fade-up">
-        <h3>1. Healthcare: Diabetes Prediction (ML Classification)</h3>
-        <p class="tagline">Python • Machine Learning • Healthcare Analytics</p>
-
-        <div class="badge-box">
-          <span class="badge">Python</span>
-          <span class="badge">scikit-learn</span>
-          <span class="badge">Pandas</span>
-          <span class="badge">Matplotlib</span>
-        </div>
-
-        <ul class="proj-list">
-          <li><strong>Problem:</strong> Early detection of diabetes using clinical features.</li>
-          <li><strong>Approach:</strong> End-to-end ML pipeline with EDA, feature engineering, model comparison, and tuning.</li>
-          <li><strong>Outcome:</strong> Random Forest delivered the best recall for high-risk patients.</li>
-        </ul>
-
-        <a
-          class="project-link"
-          href="https://github.com/Aswinab97/Healthcare-diabetes-classification"
-          target="_blank"
-        >
-          📁 View Code →
-        </a>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="card fade-up">
-        <h3>2. Ontario ER Wait Time Analysis (EDA + Dashboard)</h3>
-        <p class="tagline">EDA • Data Visualization • Tableau</p>
-
-        <div class="badge-box">
-          <span class="badge">Python</span>
-          <span class="badge">EDA</span>
-          <span class="badge">Tableau</span>
-          <span class="badge">Public Health Data</span>
-        </div>
-
-        <ul class="proj-list">
-          <li><strong>Problem:</strong> Identify wait-time bottlenecks across Ontario ER hospitals.</li>
-          <li><strong>Approach:</strong> Analysed public datasets for trend and seasonal patterns.</li>
-          <li><strong>Outcome:</strong> Interactive Tableau dashboard highlighting key KPIs and outliers.</li>
-        </ul>
-
-        <a
-          class="project-link"
-          href="https://github.com/Aswinab97/toronto_er_analysis"
-          target="_blank"
-        >
-          📁 GitHub Repo →
-        </a>
-        <a
-          class="project-link secondary"
-          href="https://public.tableau.com"
-          target="_blank"
-        >
-          🔗 Tableau Dashboard →
-        </a>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="card fade-up">
-        <h3>3. AI-Enhanced Assistive Tool for Disability Support</h3>
-        <p class="tagline">AI • Accessibility • Prototype</p>
-
-        <div class="badge-box">
-          <span class="badge">AI</span>
-          <span class="badge">Accessibility</span>
-          <span class="badge">Prototyping</span>
-        </div>
-
-        <ul class="proj-list">
-          <li><strong>Problem:</strong> Barriers faced by people with disabilities in accessing support.</li>
-          <li><strong>Approach:</strong> Lightweight AI + rule-based prototype to automate routine support tasks.</li>
-          <li><strong>Outcome:</strong> Demonstrates potential to increase independence and reduce manual workload.</li>
-        </ul>
-
-        <span class="coming-soon">Repository coming soon</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE (FULL WIDTH) -->
-  <section id="experience" class="experience">
-    <div class="container">
-      <h2>Experience</h2>
-
-      <div class="timeline-wrapper">
-        <!-- Exp 1 -->
-        <div class="timeline-card fade-up">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <p class="exp-date">Jan 2023 – Jan 2024</p>
-            <h3 class="exp-role">Machine Learning Intern</h3>
-            <p class="exp-company">Citi · Freelance · Remote</p>
-            <ul>
-              <li>Developed and fine-tuned ML models using scikit-learn and TensorFlow.</li>
-              <li>Analysed large-scale banking datasets to uncover insights and optimise strategies.</li>
-              <li>Automated feature engineering and preprocessing pipelines.</li>
-            </ul>
+          <div class="hero-meta">
+            <div>
+              <span class="meta-label">Location</span>
+              <span class="meta-value">Toronto, Canada</span>
+            </div>
+            <div>
+              <span class="meta-label">Focus Areas</span>
+              <span class="meta-value">Healthcare analytics, AI, accessibility</span>
+            </div>
           </div>
         </div>
 
-        <!-- Exp 2 -->
-        <div class="timeline-card fade-up">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <p class="exp-date">Jul 2021 – Jul 2023</p>
-            <h3 class="exp-role">Junior Data Analyst</h3>
-            <p class="exp-company">Luminar Technolab · Hybrid</p>
-            <ul>
-              <li>Designed and deployed dashboards supporting business operations and KPIs.</li>
-              <li>Built ML models to improve decision-making and measurable outcomes.</li>
-              <li>Automated reporting workflows across cross-functional teams.</li>
+        <aside class="hero-profile" data-aos="fade-left">
+          <div class="profile-card">
+            <img src="aswin.jpg" alt="Profile photo of Aswin Anil Bindu" class="profile-photo" />
+            <div class="profile-info">
+              <p class="profile-title">Applied AI Solutions Student</p>
+              <p class="profile-org">George Brown College</p>
+            </div>
+            <ul class="profile-tags">
+              <li>Python &amp; SQL</li>
+              <li>Tableau &amp; Power BI</li>
+              <li>Healthcare Data</li>
             </ul>
           </div>
-        </div>
+        </aside>
+      </div>
+    </section>
 
-        <!-- Exp 3 -->
-        <div class="timeline-card fade-up">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <p class="exp-date">Jul 2020 – Jun 2021</p>
-            <h3 class="exp-role">Data Science Intern</h3>
-            <p class="exp-company">Luminar Technolab · Full-time</p>
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container" data-aos="fade-up">
+        <h2 class="section-title">About</h2>
+        <div class="about-layout">
+          <div class="about-main">
+            <p>
+              I’m an Applied AI Solutions student at <strong>George Brown College</strong> with a
+              background in <strong>Python Data Science</strong> and
+              <strong>Mechanical Engineering</strong>. I enjoy working with real datasets, cleaning
+              them up, and building clear, honest visualizations and models that help teams make
+              better decisions.
+            </p>
+            <p>
+              My main interest is using <strong>AI and analytics to improve healthcare
+              accessibility</strong>, especially for people with disabilities — a mission shaped by
+              my own lived experience. I’m currently building a focused portfolio around healthcare
+              use cases, public data, and practical machine learning.
+            </p>
+            <p>
+              I’m looking for stable, 9–5 style roles such as <strong>Junior Data Analyst</strong> or
+              <strong>Healthcare Data Analyst</strong> in the Canadian healthcare or public sector.
+            </p>
+          </div>
+
+          <div class="about-side">
+            <h3 class="subheading">Current Focus</h3>
             <ul>
-              <li>Delivered data-driven solutions for marketing and business operations.</li>
-              <li>Performed EDA and feature engineering for internal ML projects.</li>
-              <li>Supported predictive modelling and dashboard reporting.</li>
+              <li>Healthcare ML projects (risk prediction, wait time analysis)</li>
+              <li>Improving SQL and Python for analytics</li>
+              <li>Developing production-quality dashboards (Tableau &amp; Power BI)</li>
+              <li>Strengthening communication and interview skills</li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SKILLS (FULL WIDTH) -->
-  <section id="skills" class="skills">
-    <div class="container">
-      <h2>Skills</h2>
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Projects</h2>
 
-      <h3>Data &amp; Programming</h3>
-      <ul>
-        <li>Python (pandas, NumPy, scikit-learn)</li>
-        <li>SQL (joins, CTEs, window functions)</li>
-        <li>Data cleaning &amp; modelling</li>
-      </ul>
+        <div class="cards-grid">
 
-      <h3>Analytics &amp; BI</h3>
-      <ul>
-        <li>Tableau dashboards</li>
-        <li>Power BI reporting</li>
-        <li>Excel (Pivot tables, Power Query)</li>
-      </ul>
+          <!-- Project 1 -->
+          <article class="card" data-aos="fade-up">
+            <h3>Healthcare: Diabetes Prediction (ML Classification)</h3>
+            <p class="card-meta">Python · scikit-learn · EDA · Model Evaluation</p>
+            <p>
+              Built an end-to-end machine learning pipeline to predict diabetes risk using clinical
+              features. The project covers data cleaning, exploratory analysis, feature selection,
+              model comparison, and evaluation.
+            </p>
+            <ul class="card-list">
+              <li>Implemented multiple classification models and tuned hyperparameters.</li>
+              <li>Focused on recall for high-risk patients to reduce false negatives.</li>
+              <li>Documented workflow in a clear, reproducible Jupyter notebook.</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/Aswinab97/Healthcare-diabetes-classification" target="_blank">
+                <i class="fab fa-github"></i> GitHub Repository
+              </a>
+            </div>
+          </article>
 
-      <h3>Healthcare Domain</h3>
-      <ul>
-        <li>HIPAA basics</li>
-        <li>ICD-10 familiarity</li>
-        <li>Hospital workflows &amp; ED operations</li>
-      </ul>
+          <!-- Project 2 -->
+          <article class="card" data-aos="fade-up" data-aos-delay="60">
+            <h3>Ontario ER Wait Time Analysis (EDA + Dashboard)</h3>
+            <p class="card-meta">Python · Public Health Data · Tableau</p>
+            <p>
+              Analyzed public emergency department wait time data for hospitals across Ontario to
+              highlight bottlenecks and trends, then built an interactive dashboard for exploration.
+            </p>
+            <ul class="card-list">
+              <li>Cleaned and merged multiple raw CSV files from public sources.</li>
+              <li>Explored patterns by hospital, region, and time period.</li>
+              <li>Designed a Tableau dashboard with KPIs and comparison views.</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/Aswinab97/toronto_er_analysis" target="_blank">
+                <i class="fab fa-github"></i> GitHub Repository
+              </a>
+              <a href="https://public.tableau.com/app/profile/aswin.a.b/vizzes" target="_blank">
+                <i class="fa-solid fa-chart-line"></i> Tableau Dashboard
+              </a>
+            </div>
+          </article>
 
-      <h3>Tools</h3>
-      <ul>
-        <li>Git &amp; GitHub</li>
-        <li>VS Code</li>
-        <li>Jupyter Notebook</li>
-      </ul>
-    </div>
-  </section>
+          <!-- Project 3 -->
+          <article class="card" data-aos="fade-up" data-aos-delay="120">
+            <h3>AI-Enhanced Assistive Tool for Disability Support</h3>
+            <p class="card-meta">Python · Simple AI · Accessibility</p>
+            <p>
+              Prototype of an assistive tool aimed at helping people with disabilities navigate
+              support tasks more easily using a mix of basic AI logic and rule-based workflows.
+            </p>
+            <ul class="card-list">
+              <li>Designed flows to reduce manual steps for recurring support activities.</li>
+              <li>Focused on clarity, simplicity, and real-world usability.</li>
+              <li>Planned as a foundation for future accessibility-oriented tools.</li>
+            </ul>
+            <div class="card-links">
+              <span class="muted"><i class="fa-regular fa-folder-open"></i> Repository coming soon</span>
+            </div>
+          </article>
 
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>
-        Email:
-        <a href="mailto:aswinanilbindu@gmail.com">
-          aswinanilbindu@gmail.com
-        </a>
-      </p>
-      <p>Location: Toronto, ON</p>
-    </div>
-  </section>
+          <!-- Project 4 -->
+          <article class="card" data-aos="fade-up" data-aos-delay="180">
+            <h3>Healthcare KPI Dashboards (Power BI & Tableau)</h3>
+            <p class="card-meta">Power BI · Tableau · Data Visualization</p>
+            <p>
+              Built dashboards that track core healthcare KPIs such as wait times, patient flow, and
+              resource usage, aimed at giving non-technical stakeholders a clear overview.
+            </p>
+            <ul class="card-list">
+              <li>Designed layouts for quick scanning and drill-down analysis.</li>
+              <li>Used parameters and filters to let users explore by time and facility.</li>
+              <li>Focused on clean, minimal visuals suitable for leadership reviews.</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://public.tableau.com/app/profile/aswin.a.b/vizzes" target="_blank">
+                <i class="fa-solid fa-chart-column"></i> View Dashboards
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="card" data-aos="fade-up" data-aos-delay="240">
+            <h3>SQL Portfolio: Joins, CTEs & Window Functions</h3>
+            <p class="card-meta">SQL Server · Analytics SQL</p>
+            <p>
+              A collection of SQL queries built on realistic, healthcare-style datasets to practice
+              data cleaning, metrics calculation, and slice-and-dice analytics.
+            </p>
+            <ul class="card-list">
+              <li>Used CTEs and window functions for cohort, ranking, and trend analysis.</li>
+              <li>Created views suitable for dashboards and reporting layers.</li>
+              <li>Emphasized readable, well-commented SQL for collaboration.</li>
+            </ul>
+            <div class="card-links">
+              <span class="muted"><i class="fa-regular fa-folder-open"></i> Repository coming soon</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Skills</h2>
+
+        <div class="skills-grid" data-aos="fade-up" data-aos-delay="40">
+
+          <div class="skill-group">
+            <h3>Technical</h3>
+            <ul>
+              <li>Python (pandas, NumPy, scikit-learn, matplotlib, seaborn)</li>
+              <li>SQL (MySQL, SQL Server)</li>
+              <li>Jupyter Notebook, basic Streamlit</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>Analytics & BI</h3>
+            <ul>
+              <li>Power BI, Tableau (Tableau Public)</li>
+              <li>Data cleaning, EDA & visualization</li>
+              <li>Dashboard design and reporting</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>Machine Learning</h3>
+            <ul>
+              <li>Classification & regression models</li>
+              <li>Clustering & basic NLP</li>
+              <li>Feature engineering & model evaluation</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>Data Management</h3>
+            <ul>
+              <li>SQL databases, basic MongoDB</li>
+              <li>ETL-style workflows and data preparation</li>
+              <li>Data modelling for analytics</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>Tools</h3>
+            <ul>
+              <li>Git & GitHub</li>
+              <li>VS Code, Jupyter</li>
+              <li>Linux basics & PowerShell</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>Soft Skills</h3>
+            <ul>
+              <li>Problem-solving with constraints</li>
+              <li>Clear written documentation</li>
+              <li>Collaborative, team-focused working style</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Education</h2>
+
+        <div class="timeline" data-aos="fade-up" data-aos-delay="40">
+          <div class="timeline-item">
+            <h3>Applied AI Solutions Development (Postgraduate Certificate)</h3>
+            <p class="timeline-org">George Brown College · 2025 – 2026</p>
+            <p>
+              Coursework in machine learning, data pipelines, AI solutions, and applied projects
+              using real datasets.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <h3>Python Data Science Diploma</h3>
+            <p class="timeline-org">Luminar Technolab, Kerala</p>
+            <p>
+              Focus on Python for data analysis, machine learning, and end-to-end model workflows.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <h3>Bachelor of Engineering – Mechanical Engineering</h3>
+            <p class="timeline-org">Undergraduate Degree</p>
+            <p>
+              Developed strong analytical thinking, quantitative skills, and systems understanding.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <h3>Additional Learning & Certifications</h3>
+            <p>
+              Online courses and certificates in data analytics, AI, and visualization (e.g. IBM /
+              Google-style programs and hands-on projects).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Experience</h2>
+
+        <div class="timeline" data-aos="fade-up" data-aos-delay="40">
+          <div class="timeline-item">
+            <h3>Junior Data Analyst</h3>
+            <p class="timeline-org">2+ years · India</p>
+            <ul class="card-list">
+              <li>Worked with spreadsheets and Python to clean and analyze operational data.</li>
+              <li>Helped prepare regular reports and dashboards for internal stakeholders.</li>
+              <li>Collaborated with teams to answer ad-hoc data questions and track KPIs.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <h3>Academic & Personal Projects</h3>
+            <p class="timeline-org">Ongoing</p>
+            <ul class="card-list">
+              <li>Multiple healthcare-focused analytics and machine learning projects.</li>
+              <li>Hands-on work with public datasets and dashboard tools.</li>
+              <li>Continuous practice to align with Canadian data/AI job requirements.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Contact</h2>
+
+        <div class="contact-box" data-aos="fade-up" data-aos-delay="60">
+          <p class="contact-text">
+            I’m open to opportunities in healthcare analytics, AI-assisted data workflows, and
+            public-sector data roles. If my work aligns with what your team is building, I’d be
+            happy to connect.
+          </p>
+
+          <div class="contact-info">
+            <div class="info-block">
+              <span class="info-label">Email</span>
+              <a href="mailto:aswinanilbindu@gmail.com">
+                <i class="fa-solid fa-envelope"></i> aswinanilbindu@gmail.com
+              </a>
+            </div>
+
+            <div class="info-block">
+              <span class="info-label">GitHub</span>
+              <a href="https://github.com/Aswinab97" target="_blank">
+                <i class="fab fa-github"></i> github.com/Aswinab97
+              </a>
+            </div>
+
+            <div class="info-block">
+              <span class="info-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/aswinab/" target="_blank">
+                <i class="fab fa-linkedin"></i> linkedin.com/in/aswinab
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-actions">
+            <a href="Aswin_Resume.pdf" class="btn primary" download>
+              <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2025 Aswin Anil Bindu. All rights reserved.</p>
+    <div class="container footer-inner">
+      <p>© 2025 Aswin Anil Bindu. All rights reserved.</p>
+      <a href="#top" class="back-to-top">
+        Back to top <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
   </footer>
-</body>
-</html>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script
