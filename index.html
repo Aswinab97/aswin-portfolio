@@ -4,23 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Aswin Anil Bindu | Data Analyst</title>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- AOS Animations -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
   <!-- NAVBAR -->
   <header class="navbar">
     <div class="container nav-inner">
-      <div class="logo">Aswin</div>
+      <div class="logo">Portfolio</div>
       <nav class="nav">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -31,58 +23,48 @@
   </header>
 
   <!-- HERO -->
-  <section class="hero" data-aos="fade-up">
-    <div class="container hero-inner">
+  <section class="hero">
+    <div class="container">
+      <p class="hero-tag">Data Analyst</p>
+      <h1 class="hero-title">Aswin Anil Bindu</h1>
+      <p class="hero-sub">
+        I analyze healthcare and public-sector data to build AI-driven solutions 
+        that improve accessibility, operational efficiency, and patient outcomes.
+      </p>
 
-      <div class="hero-left">
-        <p class="hero-tag">Healthcare Data Analyst</p>
-        <h1 class="hero-title">Aswin <span>Anil Bindu</span></h1>
+     <div class="hero-buttons">
+  <a href="#projects" class="btn primary">View Projects</a>
+  <a href="#contact" class="btn outline">Contact Me</a>
+  <a href="Aswin_Resume.pdf" class="btn outline" download>
+    Download Resume
+  </a>
+</div>
 
-        <p class="hero-sub">
-          I analyze healthcare and public-sector data to build AI-driven solutions 
-          that improve accessibility, operational efficiency, and patient outcomes.
-        </p>
-
-        <div class="hero-buttons">
-          <a href="#projects" class="btn primary">View Projects</a>
-          <a href="#contact" class="btn outline">Contact Me</a>
-          <a href="Aswin_Resume.pdf" class="btn outline" download>Download Resume</a>
-        </div>
-      </div>
-
-      <div class="hero-right" data-aos="fade-left">
-        <div class="profile-wrapper">
-          <img src="aswin.jpg" class="profile-photo" alt="Profile Photo">
-        </div>
-      </div>
-
-    </div>
   </section>
 
   <!-- ABOUT -->
   <section class="about" id="about">
-    <div class="container about-grid" data-aos="fade-right">
+    <div class="container about-grid">
 
       <div class="about-photo">
-        <div class="profile-wrapper-small">
-          <img src="aswin.jpg" class="profile-photo" alt="Aswin profile photo">
-        </div>
+        <img src="aswin.jpg" class="profile-photo" alt="Aswin Profile Photo">
       </div>
 
       <div class="about-text">
-        <h2 class="section-title">About Me</h2>
+        <h2>About Me</h2>
         <p>
           Hi, I’m Aswin — a data analyst specializing in healthcare analytics, predictive modelling,
-          and dashboard development. I turn hospital and public-sector data into actionable insights.
+          and dashboard development. I turn hospital and public-sector data into clean, 
+          actionable insights that support decision-making.
         </p>
         <p>
-          My background in Mechanical Engineering and Data Science helps me bridge technical analysis 
-          with practical problem-solving. I'm currently studying Applied AI Solutions Development at 
-          George Brown College.
+          My background is in Mechanical Engineering and Python Data Science, and I’m currently 
+          studying Applied AI Solutions Development at George Brown College. My work integrates Python, 
+          SQL, and modern BI tools to support evidence-based healthcare planning.
         </p>
         <p>
-          My goal is to use AI to improve accessibility and support people with disabilities — driven 
-          by my own lived experience.
+          My mission is to use AI to improve accessibility and build solutions that support people 
+          with disabilities — a passion shaped by my lived experience.
         </p>
       </div>
 
@@ -92,13 +74,13 @@
 <!-- PROJECTS -->
 <section class="projects" id="projects">
   <div class="container">
-    <h2 class="section-title" data-aos="fade-up">Projects</h2>
+    <h2>Projects</h2>
 
     <div class="projects-grid">
 
       <!-- Project 1 -->
-      <div class="card" data-aos="zoom-in">
-        <h3>Healthcare: Diabetes Prediction (ML Classification)</h3>
+      <div class="card">
+        <h3>1. Healthcare: Diabetes Prediction (ML Classification)</h3>
         <p class="tagline">Python • Machine Learning • Healthcare Analytics</p>
 
         <div class="badge-box">
@@ -110,7 +92,7 @@
 
         <ul class="proj-list">
           <li><strong>Problem:</strong> Early detection of diabetes using clinical features.</li>
-          <li><strong>Approach:</strong> End-to-end ML pipeline with EDA, feature selection, model comparison.</li>
+          <li><strong>Approach:</strong> End-to-end ML pipeline with EDA, feature selection, model comparison, and hyperparameter tuning.</li>
           <li><strong>Outcome:</strong> Random Forest achieved best recall for high-risk cases.</li>
         </ul>
 
@@ -120,31 +102,34 @@
       </div>
 
       <!-- Project 2 -->
-      <div class="card" data-aos="zoom-in" data-aos-delay="100">
-        <h3>Ontario ER Wait Time Analysis (EDA + Tableau)</h3>
-        <p class="tagline">EDA • Data Visualization • Healthcare Data</p>
+      <div class="card">
+        <h3>2. Toronto/Ontario ER Wait Time Analysis (EDA + Dashboard)</h3>
+        <p class="tagline">EDA • Data Visualization • Tableau</p>
 
         <div class="badge-box">
           <span class="badge">Python</span>
           <span class="badge">EDA</span>
           <span class="badge">Tableau</span>
-          <span class="badge">Open Data</span>
+          <span class="badge">Public Health Data</span>
         </div>
 
         <ul class="proj-list">
           <li><strong>Problem:</strong> Identify wait-time bottlenecks in Ontario ER hospitals.</li>
-          <li><strong>Approach:</strong> EDA on public datasets + monthly pattern detection.</li>
-          <li><strong>Outcome:</strong> Interactive dashboard showcasing KPIs.</li>
+          <li><strong>Approach:</strong> Analyzed public datasets for trends & monthly patterns.</li>
+          <li><strong>Outcome:</strong> Built an interactive Tableau dashboard highlighting KPIs.</li>
         </ul>
 
         <a class="card-link" href="https://github.com/Aswinab97/toronto_er_analysis" target="_blank">
           📁 GitHub Repository →
         </a>
+        <a class="card-link secondary" href="https://public.tableau.com" target="_blank">
+          🔗 Tableau Dashboard →
+        </a>
       </div>
 
       <!-- Project 3 -->
-      <div class="card" data-aos="zoom-in" data-aos-delay="200">
-        <h3>AI Assistive Tool for Disability Support</h3>
+      <div class="card">
+        <h3>3. AI-Enhanced Assistive Tool for Disability Support</h3>
         <p class="tagline">AI • Accessibility • Prototype</p>
 
         <div class="badge-box">
@@ -154,9 +139,51 @@
         </div>
 
         <ul class="proj-list">
-          <li><strong>Problem:</strong> People with disabilities face support-access barriers.</li>
-          <li><strong>Approach:</strong> Lightweight AI + rule-based workflow system.</li>
-          <li><strong>Outcome:</strong> Early prototype showing improved independence.</li>
+          <li><strong>Problem:</strong> People with disabilities often face barriers accessing support.</li>
+          <li><strong>Approach:</strong> Built a lightweight AI + rule-based system to automate tasks.</li>
+          <li><strong>Outcome:</strong> Prototype demonstrates potential for improved independence.</li>
+        </ul>
+
+        <span class="coming-soon">📁 Repository coming soon</span>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="card">
+        <h3>4. Power BI & Tableau Dashboards (Healthcare KPIs)</h3>
+        <p class="tagline">Data Visualization • BI Tools</p>
+
+        <div class="badge-box">
+          <span class="badge">Power BI</span>
+          <span class="badge">Tableau</span>
+          <span class="badge">KPIs</span>
+          <span class="badge">Healthcare Data</span>
+        </div>
+
+        <ul class="proj-list">
+          <li>Created hospital KPI dashboards (wait times, occupancy, patient flow).</li>
+          <li>Designed visual stories for healthcare decision-makers.</li>
+        </ul>
+
+        <a class="card-link" href="https://public.tableau.com" target="_blank">
+          🔗 View on Tableau Public →
+        </a>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="card">
+        <h3>5. SQL Portfolio (Joins, CTEs, Window Functions)</h3>
+        <p class="tagline">SQL • Analytics Engineering</p>
+
+        <div class="badge-box">
+          <span class="badge">SQL</span>
+          <span class="badge">CTEs</span>
+          <span class="badge">Window Functions</span>
+          <span class="badge">Data Cleaning</span>
+        </div>
+
+        <ul class="proj-list">
+          <li>Built analytical SQL queries for hospital-like datasets.</li>
+          <li>Includes joins, ranking, outlier detection, and KPI aggregation.</li>
         </ul>
 
         <span class="coming-soon">📁 Repository coming soon</span>
@@ -166,14 +193,15 @@
   </div>
 </section>
 
+
   <!-- SKILLS -->
   <section class="skills" id="skills">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Skills</h2>
+      <h2>Skills</h2>
 
       <div class="skills-grid">
 
-        <div class="skill-group" data-aos="fade-up">
+        <div class="skill-group">
           <h3>Data & Programming</h3>
           <ul>
             <li>Python (pandas, NumPy, sklearn)</li>
@@ -182,7 +210,7 @@
           </ul>
         </div>
 
-        <div class="skill-group" data-aos="fade-up" data-aos-delay="100">
+        <div class="skill-group">
           <h3>Analytics & BI</h3>
           <ul>
             <li>Tableau dashboards</li>
@@ -191,16 +219,16 @@
           </ul>
         </div>
 
-        <div class="skill-group" data-aos="fade-up" data-aos-delay="200">
+        <div class="skill-group">
           <h3>Healthcare Domain</h3>
           <ul>
             <li>HIPAA basics</li>
-            <li>ICD-10 familiarity</li>
+            <li>ICD-10 awareness</li>
             <li>ED / hospital workflows</li>
           </ul>
         </div>
 
-        <div class="skill-group" data-aos="fade-up" data-aos-delay="300">
+        <div class="skill-group">
           <h3>Tools</h3>
           <ul>
             <li>Git & GitHub</li>
@@ -215,8 +243,8 @@
 
   <!-- CONTACT -->
   <section class="contact" id="contact">
-    <div class="container" data-aos="fade-up">
-      <h2 class="section-title">Contact</h2>
+    <div class="container">
+      <h2>Contact</h2>
       <p>Email: <a href="mailto:aswinanilbindu@gmail.com">aswinanilbindu@gmail.com</a></p>
       <p>Location: Toronto, ON</p>
     </div>
@@ -226,9 +254,14 @@
     <p>© 2025 Aswin Anil Bindu. All rights reserved.</p>
   </footer>
 
-  <!-- AOS Script -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
-
 </body>
 </html>
+
+
+
+
+
+
+
+
+
