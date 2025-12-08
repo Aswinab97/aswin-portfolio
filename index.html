@@ -3,51 +3,88 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aswin Anil Bindu – Portfolio</title>
+  <title>Aswin Anil Bindu | Data Analyst</title>
+
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
   <!-- NAVBAR -->
-  <nav class="navbar">
+  <header class="navbar">
     <div class="container nav-inner">
       <div class="logo">ASWIN</div>
-      <div class="nav">
+      <nav class="nav">
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
-      </div>
+      </nav>
     </div>
-  </nav>
+  </header>
 
   <!-- HERO -->
   <section class="hero">
     <p class="hero-tag">DATA ANALYST</p>
     <h1 class="hero-title">Aswin Anil Bindu</h1>
     <p class="hero-sub">
-      I analyze healthcare and public-sector data to build AI-driven solutions 
+      I analyze healthcare and public-sector data to build AI-driven solutions
       that improve accessibility, operational efficiency, and patient outcomes.
     </p>
 
     <div class="hero-buttons">
-      <a class="btn primary" href="#projects">View Projects</a>
-      <a class="btn outline" href="#contact">Contact Me</a>
-      <a class="btn outline" href="resume.pdf" target="_blank">Download Resume</a>
+      <a href="#projects" class="btn primary">View Projects</a>
+      <a href="#contact" class="btn outline">Contact Me</a>
+      <a href="Aswin_Resume.pdf" class="btn outline" target="_blank">Download Resume</a>
     </div>
   </section>
 
-  <!-- THREE-COLUMN SECTION -->
-  <div class="container section-row">
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="container about-grid">
+      <div class="about-photo">
+        <!-- make sure this image exists in your project folder -->
+        <img src="aswin.jpg" alt="Aswin profile photo" class="profile-photo" />
+      </div>
 
-    <!-- PROJECTS -->
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          Hi, I’m Aswin — a data analyst specializing in healthcare analytics,
+          predictive modelling, and dashboard development. I turn hospital and
+          public-sector data into clean, actionable insights that support
+          decision-making.
+        </p>
+        <p>
+          My background is in Mechanical Engineering and Python Data Science,
+          and I’m currently studying Applied AI Solutions Development at George
+          Brown College. My work integrates Python, SQL, and modern BI tools to
+          support evidence-based healthcare planning.
+        </p>
+        <p>
+          My mission is to use AI to improve accessibility and build solutions
+          that support people with disabilities — a passion shaped by my lived
+          experience.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN 3-COLUMN SECTION: PROJECTS | EXPERIENCE | SKILLS -->
+  <main class="container section-row">
+    <!-- PROJECTS COLUMN -->
     <section id="projects" class="projects fade-up">
       <h2>Projects</h2>
 
       <!-- Project 1 -->
       <div class="card">
-        <h3>1. Diabetes Prediction (ML Classification)</h3>
+        <h3>1. Healthcare: Diabetes Prediction (ML Classification)</h3>
         <p class="tagline">Python • Machine Learning • Healthcare Analytics</p>
 
         <div class="badge-box">
@@ -59,96 +96,138 @@
 
         <ul class="proj-list">
           <li><strong>Problem:</strong> Early detection of diabetes using clinical features.</li>
-          <li><strong>Approach:</strong> Full ML pipeline: EDA, feature selection, model comparison.</li>
-          <li><strong>Outcome:</strong> Random Forest achieved highest recall for high-risk patients.</li>
+          <li><strong>Approach:</strong> Full ML pipeline with EDA, feature engineering, model comparison, and tuning.</li>
+          <li><strong>Outcome:</strong> Random Forest delivered the best recall for high-risk patients.</li>
         </ul>
 
-        <a class="project-link" href="https://github.com/Aswinab97/Healthcare-diabetes-classification" target="_blank">
+        <a
+          class="project-link"
+          href="https://github.com/Aswinab97/Healthcare-diabetes-classification"
+          target="_blank"
+        >
           📁 View Code →
         </a>
       </div>
 
       <!-- Project 2 -->
       <div class="card">
-        <h3>2. Ontario ER Wait Time Dashboard (EDA + Tableau)</h3>
-        <p class="tagline">Healthcare Data • EDA • Tableau</p>
+        <h3>2. Ontario ER Wait Time Analysis (EDA + Dashboard)</h3>
+        <p class="tagline">EDA • Data Visualization • Tableau</p>
 
         <div class="badge-box">
           <span class="badge">Python</span>
           <span class="badge">EDA</span>
           <span class="badge">Tableau</span>
-          <span class="badge">Public Health</span>
+          <span class="badge">Public Health Data</span>
         </div>
 
         <ul class="proj-list">
-          <li><strong>Problem:</strong> Identify wait-time bottlenecks across Ontario hospitals.</li>
-          <li><strong>Approach:</strong> EDA + trend analysis using monthly public datasets.</li>
-          <li><strong>Outcome:</strong> Built a Tableau dashboard for hospital performance KPIs.</li>
+          <li><strong>Problem:</strong> Identify wait-time bottlenecks across Ontario ER hospitals.</li>
+          <li><strong>Approach:</strong> Analysed public hospital datasets for trend and seasonal patterns.</li>
+          <li><strong>Outcome:</strong> Interactive Tableau dashboard highlighting key KPIs and outliers.</li>
         </ul>
 
-        <a class="project-link" href="https://github.com/Aswinab97/toronto_er_analysis" target="_blank">
+        <a
+          class="project-link"
+          href="https://github.com/Aswinab97/toronto_er_analysis"
+          target="_blank"
+        >
           📁 GitHub Repo →
         </a>
-        <a class="project-link secondary" href="https://public.tableau.com" target="_blank">
+        <a
+          class="project-link secondary"
+          href="https://public.tableau.com"
+          target="_blank"
+        >
           🔗 Tableau Dashboard →
         </a>
       </div>
 
+      <!-- Project 3 -->
+      <div class="card">
+        <h3>3. AI-Enhanced Assistive Tool for Disability Support</h3>
+        <p class="tagline">AI • Accessibility • Prototype</p>
+
+        <div class="badge-box">
+          <span class="badge">AI</span>
+          <span class="badge">Accessibility</span>
+          <span class="badge">Prototyping</span>
+        </div>
+
+        <ul class="proj-list">
+          <li><strong>Problem:</strong> Barriers faced by people with disabilities in accessing support.</li>
+          <li><strong>Approach:</strong> Lightweight AI + rule-based prototype to automate routine support tasks.</li>
+          <li><strong>Outcome:</strong> Demonstrates potential to increase independence and reduce manual workload.</li>
+        </ul>
+
+        <span class="coming-soon">Repository coming soon</span>
+      </div>
     </section>
 
-    <!-- EXPERIENCE -->
+    <!-- EXPERIENCE COLUMN -->
     <section id="experience" class="experience fade-up">
       <h2>Experience</h2>
 
       <div class="timeline-wrapper">
-
-        <!-- EXP 1 -->
+        <!-- Experience 1 -->
         <div class="timeline-card">
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <p class="exp-date">Jan 2023 – Jan 2024</p>
             <h3 class="exp-role">Machine Learning Intern</h3>
             <p class="exp-company">Citi · Freelance · Remote</p>
-
             <ul>
-              <li>Developed and tuned ML models using scikit-learn & TensorFlow.</li>
-              <li>Analyzed banking datasets to optimize strategy and insights.</li>
-              <li>Automated feature engineering workflows.</li>
+              <li>Developed and fine-tuned ML models using scikit-learn and TensorFlow.</li>
+              <li>Analysed large-scale banking datasets to uncover insights and optimise strategies.</li>
+              <li>Automated feature engineering and preprocessing pipelines.</li>
             </ul>
           </div>
         </div>
 
-        <!-- EXP 2 -->
+        <!-- Experience 2 -->
         <div class="timeline-card">
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <p class="exp-date">Jul 2021 – Jul 2023</p>
             <h3 class="exp-role">Junior Data Analyst</h3>
             <p class="exp-company">Luminar Technolab · Hybrid</p>
-
             <ul>
-              <li>Designed dashboards supporting business KPIs.</li>
-              <li>Built ML models to improve measurable outcomes.</li>
-              <li>Automated reporting workflows across teams.</li>
+              <li>Designed and deployed dashboards supporting business operations and KPIs.</li>
+              <li>Built machine learning models to improve decision-making and measurable outcomes.</li>
+              <li>Automated reporting workflows across cross-functional teams.</li>
             </ul>
           </div>
         </div>
 
+        <!-- Experience 3 -->
+        <div class="timeline-card">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p class="exp-date">Jul 2020 – Jun 2021</p>
+            <h3 class="exp-role">Data Science Intern</h3>
+            <p class="exp-company">Luminar Technolab · Full-time</p>
+            <ul>
+              <li>Assisted in delivering data-driven solutions for marketing and business operations.</li>
+              <li>Performed EDA and feature engineering for internal ML projects.</li>
+              <li>Supported predictive modelling and dashboard reporting.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
+    <!-- SKILLS COLUMN -->
     <section id="skills" class="skills fade-up">
       <h2>Skills</h2>
 
-      <h3>Data & Programming</h3>
+      <h3>Data &amp; Programming</h3>
       <ul>
         <li>Python (pandas, NumPy, scikit-learn)</li>
         <li>SQL (joins, CTEs, window functions)</li>
-        <li>Data cleaning & modelling</li>
+        <li>Data cleaning &amp; modelling</li>
       </ul>
 
-      <h3>Analytics & BI</h3>
+      <h3>Analytics &amp; BI</h3>
       <ul>
         <li>Tableau dashboards</li>
         <li>Power BI reporting</li>
@@ -158,29 +237,34 @@
       <h3>Healthcare Domain</h3>
       <ul>
         <li>HIPAA basics</li>
-        <li>ICD-10 familiarity</li>
-        <li>Hospital workflows & ED operations</li>
+        <li>ICD-10 awareness</li>
+        <li>ED / hospital workflows</li>
       </ul>
 
       <h3>Tools</h3>
       <ul>
-        <li>Git & GitHub</li>
+        <li>Git &amp; GitHub</li>
         <li>VS Code</li>
         <li>Jupyter Notebook</li>
       </ul>
-
     </section>
-  </div>
+  </main>
 
   <!-- CONTACT -->
   <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:aswin@gmail.com">aswin@gmail.com</a></p>
+    <div class="container">
+      <h2>Contact</h2>
+      <p>
+        Email:
+        <a href="mailto:aswinanilbindu@gmail.com">aswinanilbindu@gmail.com</a>
+      </p>
+      <p>Location: Toronto, ON</p>
+    </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
-    © 2025 Aswin Anil Bindu
+    <p>© 2025 Aswin Anil Bindu. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
