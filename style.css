@@ -1,6 +1,4 @@
-/* ---------------------------------------------------------
-   GLOBAL RESET + BASE STYLE
---------------------------------------------------------- */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -26,9 +24,7 @@ img {
   padding: 0 20px;
 }
 
-/* ---------------------------------------------------------
-   NAVBAR
---------------------------------------------------------- */
+/* NAVBAR */
 .navbar {
   position: sticky;
   top: 0;
@@ -62,9 +58,7 @@ img {
   color: #000;
 }
 
-/* ---------------------------------------------------------
-   HERO SECTION
---------------------------------------------------------- */
+/* HERO */
 .hero {
   text-align: center;
   padding: 140px 20px 100px;
@@ -81,7 +75,7 @@ img {
 .hero-title {
   font-size: 48px;
   font-weight: 700;
-  color: #111; /* FIXED: No blue */
+  color: #111;      /* black, not blue */
   margin-bottom: 14px;
 }
 
@@ -125,9 +119,7 @@ img {
   background: #f4f4f4;
 }
 
-/* ---------------------------------------------------------
-   ABOUT SECTION
---------------------------------------------------------- */
+/* ABOUT */
 .about {
   padding: 100px 0;
   border-top: 1px solid #eee;
@@ -146,8 +138,6 @@ img {
   object-fit: cover;
   border-radius: 18px;
   border: 1px solid #ddd;
-
-  /* Subtle floating animation */
   animation: float 6s ease-in-out infinite;
 }
 
@@ -162,25 +152,17 @@ img {
   margin-bottom: 15px;
 }
 
-/* ---------------------------------------------------------
-   THREE-COLUMN SECTION LAYOUT
---------------------------------------------------------- */
-.section-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 50px;
-  margin-top: 30px;
+.about-text p {
+  color: #444;
+  margin-bottom: 12px;
 }
 
-.section-row > section {
-  flex: 1;
-  min-width: 300px;
+/* PROJECTS */
+.projects {
+  padding: 90px 0;
+  border-top: 1px solid #eee;
 }
 
-/* ---------------------------------------------------------
-   PROJECTS SECTION
---------------------------------------------------------- */
 .projects h2 {
   font-size: 28px;
   margin-bottom: 25px;
@@ -213,7 +195,6 @@ img {
   margin-bottom: 14px;
 }
 
-/* Badges */
 .badge-box {
   display: flex;
   flex-wrap: wrap;
@@ -234,6 +215,10 @@ img {
   margin-bottom: 12px;
 }
 
+.proj-list li {
+  margin-bottom: 6px;
+}
+
 .project-link {
   display: inline-block;
   margin-top: 10px;
@@ -243,20 +228,37 @@ img {
   font-weight: 600;
 }
 
+.project-link.secondary {
+  display: block;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
 .project-link:hover {
   opacity: 0.7;
 }
 
-/* ---------------------------------------------------------
-   EXPERIENCE (TIMELINE)
---------------------------------------------------------- */
+.coming-soon {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #777;
+  font-style: italic;
+}
+
+/* EXPERIENCE */
+.experience {
+  padding: 90px 0;
+  border-top: 1px solid #eee;
+}
+
 .experience h2 {
   font-size: 28px;
   margin-bottom: 25px;
 }
 
 .timeline-wrapper {
-  border-left: 3px solid #222;
+  border-left: 3px solid #111;
   padding-left: 35px;
   position: relative;
 }
@@ -272,7 +274,7 @@ img {
   top: 10px;
   width: 14px;
   height: 14px;
-  background: #111;
+  background: #111;   /* black */
   border-radius: 50%;
 }
 
@@ -318,9 +320,12 @@ img {
   color: #444;
 }
 
-/* ---------------------------------------------------------
-   SKILLS
---------------------------------------------------------- */
+/* SKILLS */
+.skills {
+  padding: 90px 0;
+  border-top: 1px solid #eee;
+}
+
 .skills h2 {
   font-size: 28px;
   margin-bottom: 25px;
@@ -342,13 +347,15 @@ img {
   color: #444;
 }
 
-/* ---------------------------------------------------------
-   CONTACT
---------------------------------------------------------- */
+/* CONTACT */
 .contact {
   padding: 80px 0;
   border-top: 1px solid #eee;
   text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 18px;
 }
 
 .contact a {
@@ -356,9 +363,7 @@ img {
   font-weight: 600;
 }
 
-/* ---------------------------------------------------------
-   FOOTER
---------------------------------------------------------- */
+/* FOOTER */
 .footer {
   padding: 20px 0;
   text-align: center;
@@ -367,12 +372,10 @@ img {
   color: #666;
 }
 
-/* ---------------------------------------------------------
-   SCROLL / FADE ANIMATION
---------------------------------------------------------- */
+/* MINIMAL FADE-UP ANIMATION */
 .fade-up {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(16px);
   animation: fadeUp 0.8s ease forwards;
 }
 
@@ -383,22 +386,8 @@ img {
   }
 }
 
-/* ---------------------------------------------------------
-   MOBILE RESPONSIVE
---------------------------------------------------------- */
-@media (max-width: 900px) {
-  .section-row {
-    flex-direction: column;
-  }
-
-  .timeline-wrapper {
-    padding-left: 28px;
-  }
-
-  .timeline-marker {
-    left: -32px;
-  }
-
+/* RESPONSIVE */
+@media (max-width: 800px) {
   .about-grid {
     grid-template-columns: 1fr;
     text-align: center;
