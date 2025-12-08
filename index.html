@@ -41,7 +41,9 @@
     <div class="hero-buttons">
       <a href="#projects" class="btn primary">View Projects</a>
       <a href="#contact" class="btn outline">Contact Me</a>
-      <a href="Aswin_Resume.pdf" class="btn outline" target="_blank">Download Resume</a>
+      <a href="Aswin_Resume.pdf" class="btn outline" target="_blank">
+        Download Resume
+      </a>
     </div>
   </section>
 
@@ -49,7 +51,6 @@
   <section class="about">
     <div class="container about-grid">
       <div class="about-photo">
-        <!-- make sure this image exists in your project folder -->
         <img src="aswin.jpg" alt="Aswin profile photo" class="profile-photo" />
       </div>
 
@@ -76,14 +77,13 @@
     </div>
   </section>
 
-  <!-- MAIN 3-COLUMN SECTION: PROJECTS | EXPERIENCE | SKILLS -->
-  <main class="container section-row">
-    <!-- PROJECTS COLUMN -->
-    <section id="projects" class="projects fade-up">
+  <!-- PROJECTS (FULL WIDTH) -->
+  <section id="projects" class="projects">
+    <div class="container">
       <h2>Projects</h2>
 
       <!-- Project 1 -->
-      <div class="card">
+      <div class="card fade-up">
         <h3>1. Healthcare: Diabetes Prediction (ML Classification)</h3>
         <p class="tagline">Python • Machine Learning • Healthcare Analytics</p>
 
@@ -96,7 +96,7 @@
 
         <ul class="proj-list">
           <li><strong>Problem:</strong> Early detection of diabetes using clinical features.</li>
-          <li><strong>Approach:</strong> Full ML pipeline with EDA, feature engineering, model comparison, and tuning.</li>
+          <li><strong>Approach:</strong> End-to-end ML pipeline with EDA, feature engineering, model comparison, and tuning.</li>
           <li><strong>Outcome:</strong> Random Forest delivered the best recall for high-risk patients.</li>
         </ul>
 
@@ -110,7 +110,7 @@
       </div>
 
       <!-- Project 2 -->
-      <div class="card">
+      <div class="card fade-up">
         <h3>2. Ontario ER Wait Time Analysis (EDA + Dashboard)</h3>
         <p class="tagline">EDA • Data Visualization • Tableau</p>
 
@@ -123,7 +123,7 @@
 
         <ul class="proj-list">
           <li><strong>Problem:</strong> Identify wait-time bottlenecks across Ontario ER hospitals.</li>
-          <li><strong>Approach:</strong> Analysed public hospital datasets for trend and seasonal patterns.</li>
+          <li><strong>Approach:</strong> Analysed public datasets for trend and seasonal patterns.</li>
           <li><strong>Outcome:</strong> Interactive Tableau dashboard highlighting key KPIs and outliers.</li>
         </ul>
 
@@ -144,7 +144,7 @@
       </div>
 
       <!-- Project 3 -->
-      <div class="card">
+      <div class="card fade-up">
         <h3>3. AI-Enhanced Assistive Tool for Disability Support</h3>
         <p class="tagline">AI • Accessibility • Prototype</p>
 
@@ -162,15 +162,17 @@
 
         <span class="coming-soon">Repository coming soon</span>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- EXPERIENCE COLUMN -->
-    <section id="experience" class="experience fade-up">
+  <!-- EXPERIENCE (FULL WIDTH) -->
+  <section id="experience" class="experience">
+    <div class="container">
       <h2>Experience</h2>
 
       <div class="timeline-wrapper">
-        <!-- Experience 1 -->
-        <div class="timeline-card">
+        <!-- Exp 1 -->
+        <div class="timeline-card fade-up">
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <p class="exp-date">Jan 2023 – Jan 2024</p>
@@ -184,8 +186,8 @@
           </div>
         </div>
 
-        <!-- Experience 2 -->
-        <div class="timeline-card">
+        <!-- Exp 2 -->
+        <div class="timeline-card fade-up">
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <p class="exp-date">Jul 2021 – Jul 2023</p>
@@ -193,31 +195,33 @@
             <p class="exp-company">Luminar Technolab · Hybrid</p>
             <ul>
               <li>Designed and deployed dashboards supporting business operations and KPIs.</li>
-              <li>Built machine learning models to improve decision-making and measurable outcomes.</li>
+              <li>Built ML models to improve decision-making and measurable outcomes.</li>
               <li>Automated reporting workflows across cross-functional teams.</li>
             </ul>
           </div>
         </div>
 
-        <!-- Experience 3 -->
-        <div class="timeline-card">
+        <!-- Exp 3 -->
+        <div class="timeline-card fade-up">
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <p class="exp-date">Jul 2020 – Jun 2021</p>
             <h3 class="exp-role">Data Science Intern</h3>
             <p class="exp-company">Luminar Technolab · Full-time</p>
             <ul>
-              <li>Assisted in delivering data-driven solutions for marketing and business operations.</li>
+              <li>Delivered data-driven solutions for marketing and business operations.</li>
               <li>Performed EDA and feature engineering for internal ML projects.</li>
               <li>Supported predictive modelling and dashboard reporting.</li>
             </ul>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- SKILLS COLUMN -->
-    <section id="skills" class="skills fade-up">
+  <!-- SKILLS (FULL WIDTH) -->
+  <section id="skills" class="skills">
+    <div class="container">
       <h2>Skills</h2>
 
       <h3>Data &amp; Programming</h3>
@@ -237,8 +241,8 @@
       <h3>Healthcare Domain</h3>
       <ul>
         <li>HIPAA basics</li>
-        <li>ICD-10 awareness</li>
-        <li>ED / hospital workflows</li>
+        <li>ICD-10 familiarity</li>
+        <li>Hospital workflows &amp; ED operations</li>
       </ul>
 
       <h3>Tools</h3>
@@ -247,8 +251,8 @@
         <li>VS Code</li>
         <li>Jupyter Notebook</li>
       </ul>
-    </section>
-  </main>
+    </div>
+  </section>
 
   <!-- CONTACT -->
   <section id="contact" class="contact">
@@ -256,7 +260,9 @@
       <h2>Contact</h2>
       <p>
         Email:
-        <a href="mailto:aswinanilbindu@gmail.com">aswinanilbindu@gmail.com</a>
+        <a href="mailto:aswinanilbindu@gmail.com">
+          aswinanilbindu@gmail.com
+        </a>
       </p>
       <p>Location: Toronto, ON</p>
     </div>
