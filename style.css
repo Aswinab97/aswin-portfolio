@@ -343,34 +343,38 @@ img {
   color: #6b7280;
 }
 
-/* Skills */
+/* Skills Section */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
 }
 
-.skill-group {
+.skill-card {
   background: #ffffff;
-  border-radius: 1rem;
+  border-radius: 12px;
   border: 1px solid #e5e7eb;
-  padding: 1.1rem 1.2rem;
-  font-size: 0.9rem;
+  padding: 1.4rem 1.5rem;
+  min-height: 220px; /* keeps all cards same size */
+  display: flex;
+  flex-direction: column;
 }
 
-.skill-group h3 {
-  font-size: 0.95rem;
+.skill-card h3 {
+  font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.8rem;
 }
 
-.skill-group ul {
-  list-style: disc;
+.skill-card ul {
   padding-left: 1.1rem;
+  font-size: 0.92rem;
+  color: #374151;
 }
 
-.skill-group li + li {
-  margin-top: 0.25rem;
+.skill-card ul li + li {
+  margin-top: 0.35rem;
 }
 
 /* Timeline (Education & Experience) */
@@ -512,3 +516,4 @@ img {
     flex-direction: column;
   }
 }
+
