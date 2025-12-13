@@ -516,4 +516,11 @@ img {
     flex-direction: column;
   }
 }
-
+/* Fix Skills section order on mobile */
+@media (max-width: 768px) {
+  .skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
