@@ -343,7 +343,8 @@ img {
   color: #6b7280;
 }
 
-/* ========== Skills Section (FIXED) ========== */
+/* ========== Skills Section (Uniform Cards) ========== */
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -351,20 +352,25 @@ img {
   margin-top: 1.5rem;
 }
 
-/* Each column */
+/* Column wrapper */
 .skill-column {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.75rem;
 }
 
-/* Each skill group (card) */
+/* Individual skill card */
 .skill-group {
   background: #ffffff;
   border-radius: 1rem;
   border: 1px solid #e5e7eb;
   padding: 1.4rem 1.5rem;
-  flex: 1; /* 🔑 makes columns equal height */
+
+  /* 🔑 THIS is the key */
+  height: 240px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 /* Headings */
@@ -379,8 +385,10 @@ img {
   padding-left: 1.1rem;
   font-size: 0.92rem;
   color: #374151;
+  line-height: 1.5;
 }
 
+/* Bullet spacing */
 .skill-group ul li + li {
   margin-top: 0.35rem;
 }
@@ -390,7 +398,12 @@ img {
   .skills-grid {
     grid-template-columns: 1fr;
   }
+
+  .skill-group {
+    height: auto; /* natural height on mobile */
+  }
 }
+
 
 
 /* Timeline (Education & Experience) */
@@ -540,5 +553,6 @@ img {
     gap: 1.5rem;
   }
 }
+
 
 
