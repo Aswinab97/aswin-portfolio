@@ -5,6 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Aswin Anil Bindu | Data Analyst – Healthcare &amp; AI</title>
 
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Aswin Anil Bindu – Data Analyst specializing in Healthcare Analytics, AI, and BI. Based in Toronto, Canada." />
+  <meta name="keywords" content="Data Analyst, Healthcare Analytics, Python, SQL, Tableau, Power BI, Machine Learning, Toronto" />
+  <meta name="author" content="Aswin Anil Bindu" />
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:title" content="Aswin Anil Bindu | Data Analyst – Healthcare &amp; AI" />
+  <meta property="og:description" content="Portfolio of Aswin Anil Bindu – data analyst with expertise in Python, SQL, Tableau, Power BI, and ML." />
+  <meta property="og:image" content="https://aswinab97.github.io/aswin-portfolio/aswin.jpg" />
+  <meta property="og:url" content="https://aswinab97.github.io/aswin-portfolio/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>" />
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -19,12 +34,15 @@
 </head>
 <body>
 
+  <!-- Skip to content (accessibility) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <!-- NAVBAR -->
   <header class="navbar">
     <div class="container nav-inner">
-      <div class="logo">PORTFOLIO<span>.</span></div>
+      <div class="logo">AAB<span>.</span></div>
 
-      <nav class="nav">
+      <nav class="nav" aria-label="Main navigation">
         <a href="#about">ABOUT</a>
         <a href="#projects">PROJECTS</a>
         <a href="#skills">SKILLS</a>
@@ -34,17 +52,31 @@
       </nav>
 
       <div class="nav-links">
-        <a href="https://github.com/Aswinab97" target="_blank" aria-label="GitHub">
+        <a href="https://github.com/Aswinab97" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
           <i class="fab fa-github"></i>
         </a>
-        <a href="https://www.linkedin.com/in/aswinab/" target="_blank" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/aswinab/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
+        <!-- Hamburger (mobile) -->
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </div>
+
+    <!-- Mobile menu -->
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <main>
+  <main id="main-content">
 
     <!-- HERO -->
     <section class="hero" id="top">
@@ -119,8 +151,8 @@
             </p>
 
             <p>
-              I'm passionate about applying data and AI to healthcare and public-sector challenges
-              improving accessibility, patient outcomes, and evidence based decision-making. I'm actively
+              I'm passionate about applying data and AI to healthcare and public-sector challenges —
+              improving accessibility, patient outcomes, and evidence-based decision-making. I'm actively
               building a portfolio centered on predictive modeling, healthcare dashboards, and applied AI.
             </p>
           </div>
@@ -130,7 +162,7 @@
             <ul>
               <li>Building healthcare-focused ML and analytics projects</li>
               <li>Advancing Python and SQL for data engineering tasks</li>
-              <li>Designing clean, production ready dashboards in Tableau &amp; Power BI</li>
+              <li>Designing clean, production-ready dashboards in Tableau &amp; Power BI</li>
               <li>Strengthening communication and interview readiness</li>
             </ul>
           </div>
@@ -161,7 +193,7 @@
           <li>Delivered a clear, reproducible workflow documented in Jupyter Notebook.</li>
         </ul>
         <div class="card-links">
-          <a href="https://github.com/Aswinab97/Healthcare-diabetes-classification" target="_blank">
+          <a href="https://github.com/Aswinab97/Healthcare-diabetes-classification" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-github"></i> GitHub Repository
           </a>
         </div>
@@ -182,10 +214,10 @@
           <li>Created a Tableau dashboard with KPIs, trend visuals, and comparison views.</li>
         </ul>
         <div class="card-links">
-          <a href="https://github.com/Aswinab97/toronto_er_analysis" target="_blank">
+          <a href="https://github.com/Aswinab97/toronto_er_analysis" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-github"></i> GitHub Repository
           </a>
-          <a href="https://public.tableau.com/app/profile/aswin.a.b/vizzes" target="_blank">
+          <a href="https://public.tableau.com/app/profile/aswin.a.b/vizzes" target="_blank" rel="noopener noreferrer">
             <i class="fa-solid fa-chart-line"></i> Tableau Dashboard
           </a>
         </div>
@@ -193,20 +225,22 @@
 
       <!-- Project 3 -->
       <article class="card" data-aos="fade-up" data-aos-delay="120">
-        <h3>AI-Enhanced Assistive Tool for Disability Support</h3>
-        <p class="card-meta">Python · Simple AI · Accessibility</p>
+        <h3>Brain MRI Tumor Detector (Deep Learning + Cloud Deployment)</h3>
+        <p class="card-meta">Python · TensorFlow/Keras · Docker · Azure · Flask</p>
         <p>
-          Designed a prototype assistive tool that helps individuals with disabilities navigate
-          support tasks using basic AI logic and rule-based workflows. Focuses on improving
-          accessibility through simplicity and guided interactions.
+          Built a Dockerized Python web application that uses a deep learning model to classify
+          brain MRI scans as "tumor" or "no tumor." Deployed end-to-end via Azure Container Registry
+          and Azure App Service for real-world accessibility.
         </p>
         <ul class="card-list">
-          <li>Streamlined recurring support activities through guided flows.</li>
-          <li>Prioritized clarity, usability, and accessibility-first design.</li>
-          <li>Serves as a foundation for future healthcare-focused AI tools.</li>
+          <li>Trained a CNN-based image classification model on labeled MRI datasets.</li>
+          <li>Containerized the app with Docker and deployed to Azure App Service via ACR.</li>
+          <li>Built a full pipeline from MRI image upload to real-time prediction output.</li>
         </ul>
         <div class="card-links">
-          <span class="muted"><i class="fa-regular fa-folder-open"></i> Repository coming soon</span>
+          <a href="https://github.com/Aswinab97/brain-mri-tumor-detector" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i> GitHub Repository
+          </a>
         </div>
       </article>
 
@@ -225,47 +259,8 @@
           <li>Focused on clean, minimal data storytelling aligned with BI best practices.</li>
         </ul>
         <div class="card-links">
-          <a href="https://public.tableau.com/app/profile/aswin.a.b/vizzes" target="_blank">
+          <a href="https://public.tableau.com/app/profile/aswin.a.b/vizzes" target="_blank" rel="noopener noreferrer">
             <i class="fa-solid fa-chart-column"></i> View Dashboards
-          </a>
-        </div>
-      </article>
-
-      <!-- Project 5 -->
-      <article class="card" data-aos="fade-up" data-aos-delay="240">
-        <h3>SQL Portfolio: Joins, CTEs &amp; Window Functions</h3>
-        <p class="card-meta">SQL Server · Analytics Engineering</p>
-        <p>
-          A curated collection of SQL analytics queries based on healthcare-style datasets, designed
-          to practice data cleaning, metric calculations, and analytical transformations.
-        </p>
-        <ul class="card-list">
-          <li>Used CTEs and window functions for cohorting, ranking, and trend analysis.</li>
-          <li>Created reusable SQL views for dashboards and reporting systems.</li>
-          <li>Wrote clean, well-commented SQL optimized for collaboration.</li>
-        </ul>
-        <div class="card-links">
-          <span class="muted"><i class="fa-regular fa-folder-open"></i> Repository coming soon</span>
-        </div>
-      </article>
-
-      <!-- Project 6 -->
-      <article class="card" data-aos="fade-up" data-aos-delay="300">
-        <h3>Brain MRI Tumor Detector (Deep Learning + Cloud Deployment)</h3>
-        <p class="card-meta">Python · TensorFlow/Keras · Docker · Azure · Flask</p>
-        <p>
-          Built a Dockerized Python web application that uses a deep learning model to classify
-          brain MRI scans as "tumor" or "no tumor." Deployed end-to-end via Azure Container Registry
-          and Azure App Service for real-world accessibility.
-        </p>
-        <ul class="card-list">
-          <li>Trained a CNN-based image classification model on labeled MRI datasets.</li>
-          <li>Containerized the app with Docker and deployed to Azure App Service via ACR.</li>
-          <li>Built a full pipeline from MRI image upload to real-time prediction output.</li>
-        </ul>
-        <div class="card-links">
-          <a href="https://github.com/Aswinab97/brain-mri-tumor-detector" target="_blank">
-            <i class="fab fa-github"></i> GitHub Repository
           </a>
         </div>
       </article>
@@ -441,14 +436,14 @@
 
             <div class="info-block">
               <span class="info-label">GitHub</span>
-              <a href="https://github.com/Aswinab97" target="_blank">
+              <a href="https://github.com/Aswinab97" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-github"></i> github.com/Aswinab97
               </a>
             </div>
 
             <div class="info-block">
               <span class="info-label">LinkedIn</span>
-              <a href="https://www.linkedin.com/in/aswinab/" target="_blank">
+              <a href="https://www.linkedin.com/in/aswinab/" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-linkedin"></i> linkedin.com/in/aswinab
               </a>
             </div>
@@ -462,7 +457,7 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
-      <p>© 2025 Aswin Anil Bindu. All rights reserved.</p>
+      <p>© <span id="year"></span> Aswin Anil Bindu. All rights reserved.</p>
       <a href="#top" class="back-to-top">
         Back to top <i class="fa-solid fa-arrow-up"></i>
       </a>
@@ -477,6 +472,27 @@
       offset: 60,
       easing: 'ease-out',
       once: true
+    });
+
+    // Dynamic copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = !mobileMenu.hidden;
+      mobileMenu.hidden = isOpen;
+      hamburger.setAttribute('aria-expanded', String(!isOpen));
+    });
+
+    // Close mobile menu when a link is clicked
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.hidden = true;
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
     });
   </script>
 
