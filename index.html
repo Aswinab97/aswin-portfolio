@@ -180,21 +180,23 @@
 
       <!-- Project 1 -->
       <article class="card" data-aos="fade-up">
-        <h3>Healthcare: Diabetes Prediction (ML Classification)</h3>
-        <p class="card-meta">Python · scikit-learn · EDA · Predictive Modeling</p>
+        <h3>Brain MRI Tumor Detector (Deep Learning + Cloud Deployment)</h3>
+        <p class="card-meta">Python · PyTorch · FastAPI · Docker · Azure</p>
         <p>
-          Developed an end-to-end machine learning pipeline to predict diabetes risk using clinical
-          features. The project includes data cleaning, feature engineering, model comparison, and
-          performance evaluation with a strong focus on reducing false negatives.
+          Production-deployed clinical web application that classifies brain MRI scans as
+          <strong>Tumor</strong> or <strong>No Tumor</strong> using an ensemble deep learning pipeline.
         </p>
         <ul class="card-list">
-          <li>Trained and compared multiple models (Logistic Regression, KNN, Random Forest).</li>
-          <li>Optimized hyperparameters and prioritized recall for high-risk patients.</li>
-          <li>Delivered a clear, reproducible workflow documented in Jupyter Notebook.</li>
+          <li>Trained and benchmarked ResNet18, VGG16, DenseNet121, EfficientNetB0, and MobileNetV2.</li>
+          <li>Ensemble prediction improved performance by ~2–5% over single-model inference.</li>
+          <li>Containerized with Docker and deployed to Azure App Service via Azure Container Registry.</li>
         </ul>
         <div class="card-links">
-          <a href="https://github.com/Aswinab97/Healthcare-diabetes-classification" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Aswinab97/brain-mri-tumor-detector" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-github"></i> GitHub Repository
+          </a>
+          <a href="https://brain-mri-analyzer-frf7ezcrc4bbafcp.eastus-01.azurewebsites.net/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-globe"></i> Live App
           </a>
         </div>
       </article>
@@ -204,17 +206,16 @@
         <h3>Ontario ER Wait Time Analysis (EDA + Dashboard)</h3>
         <p class="card-meta">Python · Public Health Data · Tableau</p>
         <p>
-          Performed exploratory analysis on emergency department wait time data across Ontario to
-          identify trends, bottlenecks, and regional performance differences. Built an interactive
-          Tableau dashboard to support public-sector decision-making.
+          Exploratory analysis of Ontario emergency department wait-time data to uncover hospital-level
+          trends, regional gaps, and seasonal patterns for healthcare decision support.
         </p>
         <ul class="card-list">
-          <li>Cleaned and merged multiple raw CSV datasets from public health sources.</li>
+          <li>Cleaned and merged raw CSV datasets from public health sources.</li>
           <li>Analyzed wait times by hospital, region, and time period.</li>
-          <li>Created a Tableau dashboard with KPIs, trend visuals, and comparison views.</li>
+          <li>Built Tableau dashboard with KPI and trend views for planners and stakeholders.</li>
         </ul>
         <div class="card-links">
-          <a href="https://github.com/Aswinab97/toronto_er_analysis" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Aswinab97/ontario-ed-intelligence" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-github"></i> GitHub Repository
           </a>
           <a href="https://public.tableau.com/app/profile/aswin.a.b/vizzes" target="_blank" rel="noopener noreferrer">
@@ -225,67 +226,43 @@
 
       <!-- Project 3 -->
       <article class="card" data-aos="fade-up" data-aos-delay="120">
-        <h3>Brain MRI Tumor Detector (Deep Learning + Cloud Deployment)</h3>
-        <p class="card-meta">Python · TensorFlow/Keras · Docker · Azure · Flask</p>
+        <h3>Healthcare: Diabetes Prediction (ML Classification)</h3>
+        <p class="card-meta">Python · scikit-learn · EDA · Predictive Modeling</p>
         <p>
-          Built a Dockerized Python web application that uses a deep learning model to classify
-          brain MRI scans as "tumor" or "no tumor." Deployed end-to-end via Azure Container Registry
-          and Azure App Service for real-world accessibility.
+          End-to-end ML pipeline to predict diabetes risk from clinical features, with emphasis on
+          model comparison, reproducibility, and reducing false negatives for high-risk patients.
         </p>
         <ul class="card-list">
-          <li>Trained a CNN-based image classification model on labeled MRI datasets.</li>
-          <li>Containerized the app with Docker and deployed to Azure App Service via ACR.</li>
-          <li>Built a full pipeline from MRI image upload to real-time prediction output.</li>
+          <li>Compared Logistic Regression, KNN, and Random Forest performance.</li>
+          <li>Prioritized recall and evaluated with robust classification metrics.</li>
+          <li>Documented full workflow in reproducible Jupyter notebooks.</li>
         </ul>
         <div class="card-links">
-          <a href="https://github.com/Aswinab97/brain-mri-tumor-detector" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Aswinab97/Healthcare-diabetes-classification" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-github"></i> GitHub Repository
-          <a href="https://brain-mri-analyzer-frf7ezcrc4bbafcp.eastus-01.azurewebsites.net/" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-github"></i> Live App
           </a>
         </div>
       </article>
 
       <!-- Project 4 -->
       <article class="card" data-aos="fade-up" data-aos-delay="180">
-        <h3>Healthcare KPI Dashboards (Power BI &amp; Tableau)</h3>
-        <p class="card-meta">Power BI · Tableau · Data Visualization</p>
+        <h3>Thief Detection System (AI Computer Vision)</h3>
+        <p class="card-meta">Python · OpenCV · Computer Vision · Real-Time Detection</p>
         <p>
-          Created interactive dashboards to monitor key healthcare metrics such as wait times,
-          patient flow, and resource utilization. Designed for leadership teams and operational
-          stakeholders needing clear, data-backed insights.
+          Real-time security monitoring system that detects intruders from webcam feed and triggers
+          recording with visual alerts and timestamps.
         </p>
         <ul class="card-list">
-          <li>Built visual layouts optimized for quick scanning and decision-making.</li>
-          <li>Used filters, parameters, and drill-down options for flexible analysis.</li>
-          <li>Focused on clean, minimal data storytelling aligned with BI best practices.</li>
+          <li>Implemented frame differencing pipeline: grayscale → blur → threshold → dilate → contours.</li>
+          <li>Displays SAFE/UNSAFE status overlays with bounding boxes.</li>
+          <li>Auto-saves MP4 evidence and logs intruder detections in real time.</li>
         </ul>
         <div class="card-links">
-          <a href="https://public.tableau.com/app/profile/aswin.a.b/vizzes" target="_blank" rel="noopener noreferrer">
-            <i class="fa-solid fa-chart-column"></i> View Dashboards
+          <a href="https://github.com/Aswinab97/Thief-Detection-System-AI-Computer-Vision-" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i> GitHub Repository
           </a>
         </div>
       </article>
-      <!-- Project 5 -->
-      <article class="card" data-aos="fade-up" data-aos-delay="240">
-       <h3>Thief Detection System (AI Computer Vision)</h3>
-       <p class="card-meta">Python · OpenCV · Computer Vision · Real-Time Detection</p>
-       <p>
-         Built a real-time AI-powered security system that detects motion and intruders through a
-         webcam using computer vision techniques. The system applies background subtraction,
-         Gaussian blur, and contour detection to identify and alert on suspicious activity.
-       </p>
-       <ul class="card-list">
-        <li>Implemented frame differencing pipeline: grayscale → blur → threshold → dilate → contours.</li>
-        <li>Displays live SAFE/UNSAFE status overlay with bounding boxes and timestamp on the video feed.</li>
-        <li>Auto-saves MP4 recordings and triggers real-time console alerts on intruder detection.</li>
-      </ul>
-      <div class="card-links">
-       <a href="https://github.com/Aswinab97/Thief-Detection-System-AI-Computer-Vision-" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-github"></i> GitHub Repository
-    </a>
-  </div>
-</article>
 
     </div>
   </div>
